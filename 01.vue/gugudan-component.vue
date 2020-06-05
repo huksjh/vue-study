@@ -11,11 +11,14 @@
 </template>
 <script>
 	export default {
-		data: {
-			first: Math.ceil(Math.random() * 9),
-			second: Math.ceil(Math.random() * 9),
-			input: "",
-			result: ""
+		name: "gugudan-component",
+		data() {
+			return {
+				first: Math.ceil(Math.random() * 9),
+				second: Math.ceil(Math.random() * 9),
+				input: "",
+				result: ""
+			};
 		},
 		methods: {
 			calcGugudan(e) {

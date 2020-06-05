@@ -86,39 +86,75 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./Web.vue":
+/***/ "./App.vue":
 /*!*****************!*\
-  !*** ./Web.vue ***!
+  !*** ./App.vue ***!
   \*****************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Web_vue_vue_type_template_id_812901d4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Web.vue?vue&type=template&id=812901d4& */ \"./Web.vue?vue&type=template&id=812901d4&\");\n/* harmony import */ var _Web_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Web.vue?vue&type=script&lang=js& */ \"./Web.vue?vue&type=script&lang=js&\");\n/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/lib/runtime/componentNormalizer.js */ \"./node_modules/vue-loader/lib/runtime/componentNormalizer.js\");\n\n\n\n\n\n/* normalize component */\n\nvar component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(\n  _Web_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  _Web_vue_vue_type_template_id_812901d4___WEBPACK_IMPORTED_MODULE_0__[\"render\"],\n  _Web_vue_vue_type_template_id_812901d4___WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"],\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* hot reload */\nif (false) { var api; }\ncomponent.options.__file = \"Web.vue\"\n/* harmony default export */ __webpack_exports__[\"default\"] = (component.exports);\n\n//# sourceURL=webpack:///./Web.vue?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _App_vue_vue_type_template_id_472cff63_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App.vue?vue&type=template&id=472cff63&scoped=true& */ \"./App.vue?vue&type=template&id=472cff63&scoped=true&\");\n/* harmony import */ var _App_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.vue?vue&type=script&lang=js& */ \"./App.vue?vue&type=script&lang=js&\");\n/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/lib/runtime/componentNormalizer.js */ \"./node_modules/vue-loader/lib/runtime/componentNormalizer.js\");\n\n\n\n\n\n/* normalize component */\n\nvar component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(\n  _App_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  _App_vue_vue_type_template_id_472cff63_scoped_true___WEBPACK_IMPORTED_MODULE_0__[\"render\"],\n  _App_vue_vue_type_template_id_472cff63_scoped_true___WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"],\n  false,\n  null,\n  \"472cff63\",\n  null\n  \n)\n\n/* hot reload */\nif (false) { var api; }\ncomponent.options.__file = \"App.vue\"\n/* harmony default export */ __webpack_exports__[\"default\"] = (component.exports);\n\n//# sourceURL=webpack:///./App.vue?");
 
 /***/ }),
 
-/***/ "./Web.vue?vue&type=script&lang=js&":
+/***/ "./App.vue?vue&type=script&lang=js&":
 /*!******************************************!*\
-  !*** ./Web.vue?vue&type=script&lang=js& ***!
+  !*** ./App.vue?vue&type=script&lang=js& ***!
   \******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_vue_loader_lib_index_js_vue_loader_options_Web_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./node_modules/vue-loader/lib??vue-loader-options!./Web.vue?vue&type=script&lang=js& */ \"./node_modules/vue-loader/lib/index.js?!./Web.vue?vue&type=script&lang=js&\");\n/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__[\"default\"] = (_node_modules_vue_loader_lib_index_js_vue_loader_options_Web_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[\"default\"]); \n\n//# sourceURL=webpack:///./Web.vue?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./node_modules/vue-loader/lib??vue-loader-options!./App.vue?vue&type=script&lang=js& */ \"./node_modules/vue-loader/lib/index.js?!./App.vue?vue&type=script&lang=js&\");\n/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__[\"default\"] = (_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[\"default\"]); \n\n//# sourceURL=webpack:///./App.vue?");
 
 /***/ }),
 
-/***/ "./Web.vue?vue&type=template&id=812901d4&":
-/*!************************************************!*\
-  !*** ./Web.vue?vue&type=template&id=812901d4& ***!
-  \************************************************/
+/***/ "./App.vue?vue&type=template&id=472cff63&scoped=true&":
+/*!************************************************************!*\
+  !*** ./App.vue?vue&type=template&id=472cff63&scoped=true& ***!
+  \************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Web_vue_vue_type_template_id_812901d4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./Web.vue?vue&type=template&id=812901d4& */ \"./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./Web.vue?vue&type=template&id=812901d4&\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Web_vue_vue_type_template_id_812901d4___WEBPACK_IMPORTED_MODULE_0__[\"render\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Web_vue_vue_type_template_id_812901d4___WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"]; });\n\n\n\n//# sourceURL=webpack:///./Web.vue?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_template_id_472cff63_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./App.vue?vue&type=template&id=472cff63&scoped=true& */ \"./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./App.vue?vue&type=template&id=472cff63&scoped=true&\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_template_id_472cff63_scoped_true___WEBPACK_IMPORTED_MODULE_0__[\"render\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_template_id_472cff63_scoped_true___WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"]; });\n\n\n\n//# sourceURL=webpack:///./App.vue?");
+
+/***/ }),
+
+/***/ "./gugudan-component.vue":
+/*!*******************************!*\
+  !*** ./gugudan-component.vue ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _gugudan_component_vue_vue_type_template_id_3e3402c7___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./gugudan-component.vue?vue&type=template&id=3e3402c7& */ \"./gugudan-component.vue?vue&type=template&id=3e3402c7&\");\n/* harmony import */ var _gugudan_component_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./gugudan-component.vue?vue&type=script&lang=js& */ \"./gugudan-component.vue?vue&type=script&lang=js&\");\n/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/lib/runtime/componentNormalizer.js */ \"./node_modules/vue-loader/lib/runtime/componentNormalizer.js\");\n\n\n\n\n\n/* normalize component */\n\nvar component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(\n  _gugudan_component_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  _gugudan_component_vue_vue_type_template_id_3e3402c7___WEBPACK_IMPORTED_MODULE_0__[\"render\"],\n  _gugudan_component_vue_vue_type_template_id_3e3402c7___WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"],\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* hot reload */\nif (false) { var api; }\ncomponent.options.__file = \"gugudan-component.vue\"\n/* harmony default export */ __webpack_exports__[\"default\"] = (component.exports);\n\n//# sourceURL=webpack:///./gugudan-component.vue?");
+
+/***/ }),
+
+/***/ "./gugudan-component.vue?vue&type=script&lang=js&":
+/*!********************************************************!*\
+  !*** ./gugudan-component.vue?vue&type=script&lang=js& ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_vue_loader_lib_index_js_vue_loader_options_gugudan_component_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./node_modules/vue-loader/lib??vue-loader-options!./gugudan-component.vue?vue&type=script&lang=js& */ \"./node_modules/vue-loader/lib/index.js?!./gugudan-component.vue?vue&type=script&lang=js&\");\n/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__[\"default\"] = (_node_modules_vue_loader_lib_index_js_vue_loader_options_gugudan_component_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[\"default\"]); \n\n//# sourceURL=webpack:///./gugudan-component.vue?");
+
+/***/ }),
+
+/***/ "./gugudan-component.vue?vue&type=template&id=3e3402c7&":
+/*!**************************************************************!*\
+  !*** ./gugudan-component.vue?vue&type=template&id=3e3402c7& ***!
+  \**************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_gugudan_component_vue_vue_type_template_id_3e3402c7___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./gugudan-component.vue?vue&type=template&id=3e3402c7& */ \"./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./gugudan-component.vue?vue&type=template&id=3e3402c7&\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_gugudan_component_vue_vue_type_template_id_3e3402c7___WEBPACK_IMPORTED_MODULE_0__[\"render\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_gugudan_component_vue_vue_type_template_id_3e3402c7___WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"]; });\n\n\n\n//# sourceURL=webpack:///./gugudan-component.vue?");
 
 /***/ }),
 
@@ -130,7 +166,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nod
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.runtime.esm.js\");\n/* harmony import */ var _Web__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Web */ \"./Web.vue\");\n\r\n\r\n\r\nnew vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"](_Web__WEBPACK_IMPORTED_MODULE_1__[\"default\"]).$mount('#root')\r\n\n\n//# sourceURL=webpack:///./main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.runtime.esm.js\");\n/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App */ \"./App.vue\");\n\r\n\r\n//import GugudanComponent from './gugudan-component';\r\n\r\n/*\r\n컴포넌트 전역등록\r\ngugudan-component.vue  안에 \r\ndefault name: \"gugudan-component\"  이  App.vue 에 컴포넌트로 사용됨\r\n*/\r\n//Vue.component(GugudanComponent.name, GugudanComponent);\r\n\r\nnew vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"]({\r\n  render: (h) => h(_App__WEBPACK_IMPORTED_MODULE_1__[\"default\"]),\r\n}).$mount('#root'); //index.html  id #root\r\n\n\n//# sourceURL=webpack:///./main.js?");
 
 /***/ }),
 
@@ -167,27 +203,51 @@ eval("/* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/index.js?!./Web.vue?vue&type=script&lang=js&":
+/***/ "./node_modules/vue-loader/lib/index.js?!./App.vue?vue&type=script&lang=js&":
 /*!********************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib??vue-loader-options!./Web.vue?vue&type=script&lang=js& ***!
+  !*** ./node_modules/vue-loader/lib??vue-loader-options!./App.vue?vue&type=script&lang=js& ***!
   \********************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n\tdata: {\n\t\tfirst: Math.ceil(Math.random() * 9),\n\t\tsecond: Math.ceil(Math.random() * 9),\n\t\tinput: \"\",\n\t\tresult: \"\"\n\t},\n\tmethods: {\n\t\tcalcGugudan(e) {\n\t\t\te.preventDefault();\n\t\t\tconst numberChk = /^[0-9]*$/;\n\t\t\tconsole.log(this.input, numberChk.test(this.input));\n\t\t\tif (numberChk.test(this.input) === false) {\n\t\t\t\tthis.result = \"숫자만 입력하세요\";\n\t\t\t} else {\n\t\t\t\tif (this.first * this.second === parseInt(this.input)) {\n\t\t\t\t\tthis.result = \"정답\";\n\t\t\t\t\tthis.first = Math.ceil(Math.random() * 9);\n\t\t\t\t\tthis.second = Math.ceil(Math.random() * 9);\n\t\t\t\t} else {\n\t\t\t\t\tthis.result = \"오답\";\n\t\t\t\t}\n\t\t\t}\n\n\t\t\tthis.input = \"\";\n\t\t\tthis.$refs.answer.focus;\n\t\t}\n\t}\n});\n\n\n//# sourceURL=webpack:///./Web.vue?./node_modules/vue-loader/lib??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _gugudan_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./gugudan-component */ \"./gugudan-component.vue\");\n//\n//\n//\n//\n//\n//\n\n//안에다 넣으면  지역등록\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n\tname: \"App\",\n\tcomponents: {\n\t\tGugudanComponent: _gugudan_component__WEBPACK_IMPORTED_MODULE_0__[\"default\"]\n\t\t/** gugudan-component.vue 파일 안에 name= gugudan-component */\n\t}\n});\n\n\n//# sourceURL=webpack:///./App.vue?./node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./Web.vue?vue&type=template&id=812901d4&":
-/*!******************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./Web.vue?vue&type=template&id=812901d4& ***!
-  \******************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/index.js?!./gugudan-component.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib??vue-loader-options!./gugudan-component.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n\tname: \"gugudan-component\",\n\tdata() {\n\t\treturn {\n\t\t\tfirst: Math.ceil(Math.random() * 9),\n\t\t\tsecond: Math.ceil(Math.random() * 9),\n\t\t\tinput: \"\",\n\t\t\tresult: \"\"\n\t\t};\n\t},\n\tmethods: {\n\t\tcalcGugudan(e) {\n\t\t\te.preventDefault();\n\t\t\tconst numberChk = /^[0-9]*$/;\n\t\t\tconsole.log(this.input, numberChk.test(this.input));\n\t\t\tif (numberChk.test(this.input) === false) {\n\t\t\t\tthis.result = \"숫자만 입력하세요\";\n\t\t\t} else {\n\t\t\t\tif (this.first * this.second === parseInt(this.input)) {\n\t\t\t\t\tthis.result = \"정답\";\n\t\t\t\t\tthis.first = Math.ceil(Math.random() * 9);\n\t\t\t\t\tthis.second = Math.ceil(Math.random() * 9);\n\t\t\t\t} else {\n\t\t\t\t\tthis.result = \"오답\";\n\t\t\t\t}\n\t\t\t}\n\n\t\t\tthis.input = \"\";\n\t\t\tthis.$refs.answer.focus;\n\t\t}\n\t}\n});\n\n\n//# sourceURL=webpack:///./gugudan-component.vue?./node_modules/vue-loader/lib??vue-loader-options");
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./App.vue?vue&type=template&id=472cff63&scoped=true&":
+/*!******************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./App.vue?vue&type=template&id=472cff63&scoped=true& ***!
+  \******************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"div\", [\n    _c(\"h1\", [_vm._v(\"구구단\")]),\n    _vm._v(\" \"),\n    _c(\"div\", [_vm._v(_vm._s(_vm.first) + \" x \" + _vm._s(_vm.second) + \" ?\")]),\n    _vm._v(\" \"),\n    _c(\"form\", { on: { submit: _vm.calcGugudan } }, [\n      _c(\"input\", {\n        directives: [\n          {\n            name: \"model\",\n            rawName: \"v-model\",\n            value: _vm.input,\n            expression: \"input\"\n          }\n        ],\n        ref: \"answer\",\n        attrs: { type: \"text\" },\n        domProps: { value: _vm.input },\n        on: {\n          input: function($event) {\n            if ($event.target.composing) {\n              return\n            }\n            _vm.input = $event.target.value\n          }\n        }\n      }),\n      _vm._v(\" \"),\n      _c(\"button\", { attrs: { type: \"submit\" } }, [_vm._v(\"계산\")])\n    ]),\n    _vm._v(\" \"),\n    _c(\"h1\", [_vm._v(_vm._s(_vm.result))])\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack:///./Web.vue?./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"div\", { attrs: { id: \"App\" } }, [_c(\"gugudan-component\")], 1)\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack:///./App.vue?./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options");
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./gugudan-component.vue?vue&type=template&id=3e3402c7&":
+/*!********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./gugudan-component.vue?vue&type=template&id=3e3402c7& ***!
+  \********************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"div\", [\n    _c(\"h1\", [_vm._v(\"구구단\")]),\n    _vm._v(\" \"),\n    _c(\"div\", [_vm._v(_vm._s(_vm.first) + \" x \" + _vm._s(_vm.second) + \" ?\")]),\n    _vm._v(\" \"),\n    _c(\"form\", { on: { submit: _vm.calcGugudan } }, [\n      _c(\"input\", {\n        directives: [\n          {\n            name: \"model\",\n            rawName: \"v-model\",\n            value: _vm.input,\n            expression: \"input\"\n          }\n        ],\n        ref: \"answer\",\n        attrs: { type: \"text\" },\n        domProps: { value: _vm.input },\n        on: {\n          input: function($event) {\n            if ($event.target.composing) {\n              return\n            }\n            _vm.input = $event.target.value\n          }\n        }\n      }),\n      _vm._v(\" \"),\n      _c(\"button\", { attrs: { type: \"submit\" } }, [_vm._v(\"계산\")])\n    ]),\n    _vm._v(\" \"),\n    _c(\"h1\", [_vm._v(_vm._s(_vm.result))])\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack:///./gugudan-component.vue?./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 
