@@ -1,7 +1,7 @@
 <template>
 	<v-app>
 		<!-- 상단 -->
-		<layout-head />
+		<layout-head :titles="titles" />
 
 		<!-- 컨텐츠 노출영역 -->
 		<v-content>
@@ -14,14 +14,19 @@
 </template>
 
 <script>
-	import LayoutHead from "@/views/layout/head";
-	import LayoutFooter from "@/views/layout/footer";
+	import LayoutHead from "@/views/layout/Head";
+	import LayoutFooter from "@/views/layout/Footers";
 
 	export default {
 		components: {
 			LayoutHead,
 			LayoutFooter
 		},
-		name: "App"
+		name: "App",
+		data() {
+			return {
+				titles: "제목"
+			};
+		}
 	};
 </script>
