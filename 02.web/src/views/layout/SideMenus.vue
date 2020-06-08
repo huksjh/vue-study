@@ -15,7 +15,9 @@
 
 			<v-list-item v-for="subItem in item.subItems" :key="subItem.title">
 				<v-list-item-content>
-					<v-list-item-title v-text="subItem.title"></v-list-item-title>
+					<v-list-item-title
+						v-text="subItem.title"
+					></v-list-item-title>
 				</v-list-item-content>
 			</v-list-item>
 		</v-list-group>
@@ -23,34 +25,34 @@
 </template>
 
 <script>
-	export default {
-		data() {
-			return {
-				items: [
-					{
-						icon: 'mdi-home',
-						title: 'Attractions',
-						subItems: [{ title: 'List Item' }],
-					},
-					{
-						icon: 'mdi-magnify',
-						title: 'Dining',
-						active: true,
-						subItems: [
-							{ title: 'Breakfast & brunch' },
-							{ title: 'New American' },
-							{ title: 'Sushi' },
-						],
-					},
-					{
-						icon: 'mdi-arrow_right_alt',
-						title: 'Education',
-						subItems: [{ title: 'List Item' }],
-					},
-				],
-			};
-		},
-	};
+export default {
+	data() {
+		return {
+			items: [
+				{
+					icon: 'mdi-home',
+					title: 'Attractions',
+					subItems: [{ title: 'List Item' }],
+				},
+				{
+					icon: 'mdi-magnify',
+					title: 'Dining',
+					active: true,
+					subItems: [
+						{ title: 'Breakfast & brunch' },
+						{ title: 'New American' },
+						{ title: 'Sushi' },
+					],
+				},
+				{
+					icon: 'mdi-arrow_right_alt',
+					title: 'Education',
+					subItems: [{ title: 'List Item' }],
+				},
+			],
+		};
+	},
+};
 </script>
 
 <style></style>

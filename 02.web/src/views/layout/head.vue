@@ -15,7 +15,9 @@
 		<v-navigation-drawer app fixed temporary v-model="drawer">
 			<v-list-item>
 				<v-list-item-content>
-					<v-list-item-title class="title">Application</v-list-item-title>
+					<v-list-item-title class="title"
+						>Application</v-list-item-title
+					>
 					<v-list-item-subtitle>subtext</v-list-item-subtitle>
 				</v-list-item-content>
 			</v-list-item>
@@ -28,16 +30,16 @@
 </template>
 
 <script>
-	import SideMenus from '@/views/layout/SideMenus';
-	export default {
-		components: { SideMenus },
-		props: ['titles'],
-		data() {
-			return {
-				drawer: false,
-			};
-		},
-	};
+import SideMenus from '@/views/layout/SideMenus';
+export default {
+	components: { SideMenus },
+	props: ['titles'],
+	data() {
+		return {
+			drawer: false,
+		};
+	},
+};
 </script>
 
 <style></style>
