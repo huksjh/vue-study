@@ -28,30 +28,29 @@
 			return {
 				items: [
 					{
-						icon: "mdi-home",
-						title: "Attractions",
-						subItems: [{ title: "List Item" }]
+						icon: 'mdi-home',
+						title: 'Attractions',
+						subItems: [{ title: 'List Item' }],
 					},
 					{
-						icon: "mdi-magnify",
-						title: "Dining",
+						icon: 'mdi-magnify',
+						title: 'Dining',
 						active: true,
 						subItems: [
-							{ title: "Breakfast & brunch" },
-							{ title: "New American" },
-							{ title: "Sushi" }
-						]
+							{ title: 'Breakfast & brunch' },
+							{ title: 'New American' },
+							{ title: 'Sushi' },
+						],
 					},
 					{
-						icon: "mdi-arrow_right_alt",
-						title: "Education",
-						subItems: [{ title: "List Item" }]
-					}
-				]
+						icon: 'mdi-arrow_right_alt',
+						title: 'Education',
+						subItems: [{ title: 'List Item' }],
+					},
+				],
 			};
-		}
+		},
 	};
 </script>
 
-<style>
-</style>
+<style></style>

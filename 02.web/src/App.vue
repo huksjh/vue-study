@@ -14,19 +14,19 @@
 </template>
 
 <script>
-	import LayoutHead from "@/views/layout/Head";
-	import LayoutFooter from "@/views/layout/Footers";
+	import LayoutHead from '@/views/layout/Head';
+	import LayoutFooter from '@/views/layout/Footers';
 
 	export default {
+		name: 'App',
 		components: {
 			LayoutHead,
-			LayoutFooter
+			LayoutFooter,
 		},
-		name: "App",
 		data() {
 			return {
-				titles: "제목"
+				titles: '제목',
 			};
-		}
+		},
 	};
 </script>

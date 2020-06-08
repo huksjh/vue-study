@@ -28,17 +28,16 @@
 </template>
 
 <script>
-	import SideMenus from "@/views/layout/SideMenus";
+	import SideMenus from '@/views/layout/SideMenus';
 	export default {
 		components: { SideMenus },
-		props: ["titles"],
+		props: ['titles'],
 		data() {
 			return {
-				drawer: false
+				drawer: false,
 			};
-		}
+		},
 	};
 </script>
 
-<style>
-</style>
+<style></style>
