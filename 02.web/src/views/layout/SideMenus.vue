@@ -13,11 +13,9 @@
 				</v-list-item-content>
 			</template>
 
-			<v-list-item v-for="subItem in item.subItems" :key="subItem.title">
+			<v-list-item v-for="subitem in item.subItems" :key="subitem.title">
 				<v-list-item-content>
-					<v-list-item-title
-						v-text="subItem.title"
-					></v-list-item-title>
+					<v-list-item-title v-text="subitem.title"></v-list-item-title>
 				</v-list-item-content>
 			</v-list-item>
 		</v-list-group>
@@ -31,23 +29,32 @@ export default {
 			items: [
 				{
 					icon: 'mdi-home',
-					title: 'Attractions',
-					subItems: [{ title: 'List Item' }],
+					title: '홈',
+					subItems: [],
+					to: '/',
 				},
 				{
-					icon: 'mdi-magnify',
-					title: 'Dining',
-					active: true,
+					icon: 'mdi-home',
+					title: '영업관리',
+					subItems: [{ title: '영업관리' }],
+					to: '/',
+				},
+				{
+					icon: 'mdi-description',
+					title: '프로젝트관리',
 					subItems: [
-						{ title: 'Breakfast & brunch' },
-						{ title: 'New American' },
-						{ title: 'Sushi' },
+						{ title: '진행현황' },
+						{ title: '일정관리' },
+						{ title: '연장관리(호스팅)' },
+						{ title: '연장관리(도메인)' },
 					],
+					to: '/',
 				},
 				{
-					icon: 'mdi-arrow_right_alt',
-					title: 'Education',
-					subItems: [{ title: 'List Item' }],
+					icon: 'mdi-assessment',
+					title: '통계',
+					subItems: [{ title: '완료프로젝트' }, { title: '거래내역' }],
+					to: '/',
 				},
 			],
 		};

@@ -25,7 +25,7 @@ export default {
 	},
 	data() {
 		return {
-			titles: '제목',
+			titles: '인트라넷',
 		};
 	},
 };
