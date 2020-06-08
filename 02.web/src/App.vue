@@ -28,5 +28,8 @@ export default {
 			titles: '인트라넷',
 		};
 	},
+	mounted() {
+		console.log(this.$firebase);
+	},
 };
 </script>
