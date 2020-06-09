@@ -1,7 +1,7 @@
 <template>
 	<v-list>
 		<v-list-group
-			v-for="item in items"
+			v-for="item in itemMenus"
 			:key="item.title"
 			v-model="item.active"
 			:prepend-icon="item.icon"
@@ -24,40 +24,9 @@
 
 <script>
 export default {
+	props: ['itemMenus'],
 	data() {
-		return {
-			items: [
-				{
-					icon: 'mdi-home',
-					title: '홈',
-					subItems: [],
-					to: '/',
-				},
-				{
-					icon: 'mdi-home',
-					title: '영업관리',
-					subItems: [{ title: '영업관리' }],
-					to: '/',
-				},
-				{
-					icon: 'mdi-description',
-					title: '프로젝트관리',
-					subItems: [
-						{ title: '진행현황' },
-						{ title: '일정관리' },
-						{ title: '연장관리(호스팅)' },
-						{ title: '연장관리(도메인)' },
-					],
-					to: '/',
-				},
-				{
-					icon: 'mdi-assessment',
-					title: '통계',
-					subItems: [{ title: '완료프로젝트' }, { title: '거래내역' }],
-					to: '/',
-				},
-			],
-		};
+		return {};
 	},
 };
 </script>

@@ -1,7 +1,7 @@
 <template>
 	<v-app>
 		<!-- 상단 -->
-		<layout-head :title="site.title" />
+		<layout-head :title="site.title" :items="site.menus" />
 
 		<!-- 컨텐츠 노출영역 -->
 		<v-content>
@@ -26,7 +26,37 @@ export default {
 	data() {
 		return {
 			site: {
-				menus: [],
+				menus: [
+					{
+						icon: 'mdi-home',
+						title: '홈',
+						subItems: [],
+						to: '/',
+					},
+					{
+						icon: 'mdi-calendar-multiselect',
+						title: '영업관리',
+						subItems: [{ title: '영업관리' }],
+						to: '/',
+					},
+					{
+						icon: 'mdi-notebook',
+						title: '프로젝트관리',
+						subItems: [
+							{ title: '진행현황' },
+							{ title: '일정관리' },
+							{ title: '연장관리(호스팅)' },
+							{ title: '연장관리(도메인)' },
+						],
+						to: '/',
+					},
+					{
+						icon: 'mdi-chart-bar',
+						title: '통계',
+						subItems: [{ title: '완료프로젝트' }, { title: '거래내역' }],
+						to: '/',
+					},
+				],
 				title: '인트라넷',
 				footer: '카피라이트',
 			},
@@ -37,7 +67,7 @@ export default {
 		this.subscribe();
 	},
 	mounted() {
-		console.log('mounted', this.$firebase);
+		//console.log('mounted', this.$firebase);
 	},
 	methods: {
 		subscribe() {
@@ -57,11 +87,13 @@ export default {
 								.ref()
 								.child('site')
 								.set(this.site);
+							//console.log('inside-subscribe', v);
+							return;
 						}
-						console.log(v);
+						console.log('subscribe', v);
 						this.site = v;
 					},
-					e => console.error(e.message),
+					e => console.log(e.message),
 				);
 		},
 	},
