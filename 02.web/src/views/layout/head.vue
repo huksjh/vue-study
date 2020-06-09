@@ -2,7 +2,12 @@
 	<div>
 		<v-app-bar app color="deep-purple accent-4" dark>
 			<v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-			<v-toolbar-title>{{ titles }}</v-toolbar-title>
+			<v-toolbar-title>
+				{{ title }}
+				<v-btn icon @click="openDialog"><v-icon>mdi-pencil</v-icon></v-btn>
+				<v-dialog v-model="dialog" max-width="400"></v-dialog>
+			</v-toolbar-title>
+
 			<!-- spacer 뒤에꺼 오른쪽으로 정렬 -->
 			<v-spacer></v-spacer>
 			<v-btn icon to="/about">
@@ -43,14 +48,17 @@
 import SideMenus from '@/views/layout/SideMenus';
 export default {
 	components: { SideMenus },
-	props: ['titles'],
+	props: ['title'],
 	data() {
 		return {
 			drawer: false,
+			dialog: false,
 		};
 	},
-
 	methods: {
+		openDialog() {
+			this.dialog = true;
+		},
 		save() {
 			console.log('2222');
 			this.$firebase
