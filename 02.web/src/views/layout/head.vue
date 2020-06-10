@@ -45,7 +45,7 @@
 		</v-app-bar>
 
 		<!-- 좌메뉴 -->
-		<v-navigation-drawer app fixed temporary v-model="drawer">
+		<v-navigation-drawer app fixed temporary v-model="drawer" width="400">
 			<v-list-item>
 				<v-list-item-content>
 					<v-list-item-title class="title">{{ title }}</v-list-item-title>
@@ -55,7 +55,7 @@
 			<v-divider></v-divider>
 
 			<!-- 메뉴 리스트 -->
-			<side-menus :itemMenus="items" />
+			<side-menus :items="items" />
 		</v-navigation-drawer>
 		<!-- 좌메뉴 -->
 	</div>
@@ -70,6 +70,7 @@ export default {
 		return {
 			drawer: false,
 			dialog: false,
+
 			text: this.title,
 		};
 	},
