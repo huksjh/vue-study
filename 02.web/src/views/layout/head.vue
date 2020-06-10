@@ -1,9 +1,14 @@
 <template>
 	<div>
+		<!-- 상단바 영역 -->
 		<v-app-bar app color="deep-purple accent-4" dark>
+			<!-- 메뉴 버튼 햄버거  -->
 			<v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+
+			<!-- 타이틀 노출  -->
 			<v-toolbar-title>
 				{{ title }}
+				<!-- 수정 연필 -->
 				<v-btn icon @click="openDialog"><v-icon>mdi-pencil</v-icon></v-btn>
 				<v-dialog v-model="dialog" max-width="400">
 					<v-card>
@@ -21,13 +26,14 @@
 							<v-text-field
 								v-model="text"
 								outlined
-								label="제목수정"
+								label="제목"
 								@keypress.enter="save"
 								hide-details
 							></v-text-field>
 						</v-card-text>
 					</v-card>
 				</v-dialog>
+				<!-- 수정 연필 -->
 			</v-toolbar-title>
 
 			<!-- spacer 뒤에꺼 오른쪽으로 정렬 -->
@@ -51,6 +57,7 @@
 			<!-- 메뉴 리스트 -->
 			<side-menus :itemMenus="items" />
 		</v-navigation-drawer>
+		<!-- 좌메뉴 -->
 	</div>
 </template>
 
@@ -81,30 +88,9 @@ export default {
 					.update({
 						title: this.text,
 					});
-			} catch (e) {
-				console.log(e.message);
 			} finally {
 				this.dialog = false;
 			}
-		},
-		read() {
-			this.$firebase
-				.database()
-				.ref()
-				.child('abcd')
-				.on('value', sn => {
-					console.log(sn);
-					console.log(sn.val());
-				});
-		},
-		async readOne() {
-			const sn = await this.$firebase
-				.database()
-				.ref()
-				.child('abcd')
-				.once('value');
-			console.log('readOne', sn);
-			console.log('readOne', sn.val());
 		},
 	},
 };
