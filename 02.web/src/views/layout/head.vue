@@ -47,7 +47,13 @@
 		</v-app-bar>
 
 		<!-- 좌메뉴 -->
-		<v-navigation-drawer app fixed temporary v-model="drawer" width="400">
+		<v-navigation-drawer
+			app
+			fixed
+			temporary
+			v-model="drawer"
+			:width="$store.state.editable ? '400' : '300'"
+		>
 			<!-- 메뉴 리스트 -->
 			<side-menus :items="items" :title="title" />
 		</v-navigation-drawer>

@@ -4,9 +4,10 @@
 			<v-list-item-content>
 				<v-list-item-title class="title"
 					>{{ title }}
-					<v-btn icon @click="$store.commit('setEdit', !$store.state.editable)"
-						><v-icon>mdi-eye</v-icon></v-btn
-					>
+					<v-btn icon @click="$store.commit('setEdit', !$store.state.editable)">
+						<v-icon v-text="$store.state.editable ? 'mdi-pencil' : 'mdi-eye'">
+						</v-icon>
+					</v-btn>
 				</v-list-item-title>
 			</v-list-item-content>
 		</v-list-item>
@@ -16,19 +17,37 @@
 			<v-list-group
 				v-for="(item, i) in items"
 				:key="i"
-				v-model="item.active"
 				:prepend-icon="item.icon"
 				no-action
+				:disabled="moveArrow"
 			>
 				<template v-slot:activator>
 					<v-list-item-content>
 						<v-list-item-title>
 							{{ item.title }}
+							<!-- 수정버튼 -->
 							<span v-if="$store.state.editable"
-								><v-btn icon @click="openDialog(i, -1, 'main')"
-									><v-icon>mdi-pencil</v-icon></v-btn
-								></span
-							>
+								><v-btn icon color="black" @click="openDialog(i, -1, 'main')">
+									<v-icon>mdi-pencil</v-icon>
+								</v-btn>
+								<v-btn
+									icon
+									color="red"
+									@click="moveItems(items, i, -1)"
+									v-if="i > 0"
+								>
+									<v-icon>mdi-arrow-up-bold-circle-outline</v-icon>
+								</v-btn>
+								<v-btn
+									icon
+									color="blue"
+									@click="moveItems(items, i, 1)"
+									v-if="i < items.length - 1"
+								>
+									<v-icon>mdi-arrow-down-bold-circle-outline</v-icon>
+								</v-btn>
+							</span>
+							<!-- 수정버튼 -->
 						</v-list-item-title>
 					</v-list-item-content>
 				</template>
@@ -36,16 +55,34 @@
 				<v-list-item
 					v-for="(subitem, j) in item.subItems"
 					:key="j"
-					:to="subitem.to"
+					:to="$store.state.editable ? null : subitem.to"
 				>
 					<v-list-item-content>
 						<v-list-item-title>
 							{{ subitem.title }}
-							<span v-if="$store.state.editable"
-								><v-btn icon @click="openDialog(i, j, 'sub')"
-									><v-icon>mdi-pencil</v-icon></v-btn
-								></span
-							>
+							<!-- 수정버튼 -->
+							<span v-if="$store.state.editable">
+								<v-btn icon color="black" @click="openDialog(i, j, 'sub')">
+									<v-icon>mdi-pencil</v-icon>
+								</v-btn>
+								<v-btn
+									icon
+									color="red"
+									@click="moveItems(item.subItems, j, -1)"
+									v-if="j > 0"
+								>
+									<v-icon>mdi-arrow-up-bold-circle-outline</v-icon>
+								</v-btn>
+								<v-btn
+									icon
+									color="blue"
+									@click="moveItems(item.subItems, j, 1)"
+									v-if="j < item.subItems.length - 1"
+								>
+									<v-icon>mdi-arrow-down-bold-circle-outline</v-icon>
+								</v-btn>
+							</span>
+							<!-- 수정버튼 -->
 						</v-list-item-title>
 					</v-list-item-content>
 				</v-list-item>
@@ -69,7 +106,11 @@
 				</v-list-item-content>
 			</v-list-item>
 		</v-list>
-		<v-dialog v-model="dialogItems" max-width="400">
+		<v-dialog
+			v-model="dialogItems"
+			max-width="400"
+			@click:outside="closeDialog()"
+		>
 			<v-card>
 				<v-card-title>
 					<template v-if="mainSubChk === 'sub'">
@@ -102,7 +143,7 @@
 					>
 						<v-icon>mdi-content-save</v-icon>
 					</v-btn>
-					<v-btn icon color="red" @click="dialogItems = false">
+					<v-btn icon color="red" @click="closeDialog()">
 						<v-icon>mdi-close</v-icon>
 					</v-btn>
 				</v-card-title>
@@ -164,6 +205,7 @@ export default {
 	props: ['title', 'items'],
 	data() {
 		return {
+			moveArrow: false,
 			mainSubChk: 'main',
 			dialogItems: false,
 			dialogSubItems: false,
@@ -194,7 +236,7 @@ export default {
 			this.selectIndex = index; //모달창 여는 선택된 부모?  번호 기록
 			this.selectSubIndex = subIndex; //모달창 여는 선택된 부모?  번호 기록
 			this.mainSubChk = mode; //메인 서브 구분
-			console.log(index, subIndex);
+			//console.log(index, subIndex);
 			if (mode == 'sub') {
 				//신규 분류추가 클릭일경우 모달 인풋 값 초기화 아니면  기존 이름 넣어주기
 				if (subIndex < 0) {
@@ -218,8 +260,14 @@ export default {
 			}
 
 			this.dialogItems = true; //모달창 열기
+			this.moveArrow = true; //메뉴 드롭다운 비활성화
 
 			//this.save();
+		},
+		closeDialog() {
+			console.log('closeDialog');
+			this.dialogItems = false; //모달창 열기
+			this.moveArrow = false; //메뉴 드롭다운 비활성화
 		},
 		saveItem() {
 			//모달에서 입력받는 값이 없으면 alert 띄운다
@@ -267,7 +315,15 @@ export default {
 					.set(this.items);
 			} finally {
 				this.dialogItems = false;
+				this.moveArrow = false;
 			}
+		},
+
+		moveItems(menus, i, arrow) {
+			console.log(menus, i, arrow);
+			menus.splice(i + arrow, 0, ...menus.splice(i, 1));
+			this.moveArrow = true;
+			this.saveData();
 		},
 	},
 };
