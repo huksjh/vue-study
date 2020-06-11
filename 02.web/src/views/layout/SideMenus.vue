@@ -1,5 +1,17 @@
 <template>
 	<div>
+		<v-list-item three-line>
+			<v-list-item-content>
+				<v-list-item-title class="title"
+					>{{ title }}
+					<v-btn icon @click="$store.commit('setEdit', !$store.state.editable)"
+						><v-icon>mdi-eye</v-icon></v-btn
+					>
+				</v-list-item-title>
+			</v-list-item-content>
+		</v-list-item>
+
+		<v-divider></v-divider>
 		<v-list>
 			<v-list-group
 				v-for="(item, i) in items"
@@ -12,7 +24,7 @@
 					<v-list-item-content>
 						<v-list-item-title>
 							{{ item.title }}
-							<span
+							<span v-if="$store.state.editable"
 								><v-btn icon @click="openDialog(i, -1, 'main')"
 									><v-icon>mdi-pencil</v-icon></v-btn
 								></span
@@ -21,11 +33,15 @@
 					</v-list-item-content>
 				</template>
 
-				<v-list-item v-for="(subitem, j) in item.subItems" :key="j">
+				<v-list-item
+					v-for="(subitem, j) in item.subItems"
+					:key="j"
+					:to="subitem.to"
+				>
 					<v-list-item-content>
 						<v-list-item-title>
 							{{ subitem.title }}
-							<span
+							<span v-if="$store.state.editable"
 								><v-btn icon @click="openDialog(i, j, 'sub')"
 									><v-icon>mdi-pencil</v-icon></v-btn
 								></span
@@ -145,7 +161,7 @@
 
 <script>
 export default {
-	props: ['items'],
+	props: ['title', 'items'],
 	data() {
 		return {
 			mainSubChk: 'main',
@@ -169,6 +185,9 @@ export default {
 				emailMatch: () => "The email and password you entered don't match",
 			},
 		};
+	},
+	mounted() {
+		console.log(this.$store); //sotre/index  vuex 실행된거
 	},
 	methods: {
 		openDialog(index, subIndex, mode) {

@@ -4,8 +4,15 @@ import Vuex from 'vuex';
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-	state: {},
-	mutations: {},
+	state: {
+		//편집가능유무
+		editable: true,
+	},
+	mutations: {
+		setEdit(state, edit) {
+			state.editable = edit;
+		},
+	},
 	actions: {},
 	modules: {},
 });

@@ -9,7 +9,9 @@
 			<v-toolbar-title>
 				{{ title }}
 				<!-- 수정 연필 -->
-				<v-btn icon @click="openDialog"><v-icon>mdi-pencil</v-icon></v-btn>
+				<v-btn v-if="$store.state.editable" icon @click="openDialog"
+					><v-icon>mdi-pencil</v-icon></v-btn
+				>
 				<v-dialog v-model="dialog" max-width="400">
 					<v-card>
 						<v-card-title>
@@ -46,16 +48,8 @@
 
 		<!-- 좌메뉴 -->
 		<v-navigation-drawer app fixed temporary v-model="drawer" width="400">
-			<v-list-item>
-				<v-list-item-content>
-					<v-list-item-title class="title">{{ title }}</v-list-item-title>
-				</v-list-item-content>
-			</v-list-item>
-
-			<v-divider></v-divider>
-
 			<!-- 메뉴 리스트 -->
-			<side-menus :items="items" />
+			<side-menus :items="items" :title="title" />
 		</v-navigation-drawer>
 		<!-- 좌메뉴 -->
 	</div>
