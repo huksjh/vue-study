@@ -9,8 +9,14 @@ import 'firebase/auth';
 import 'firebase/database';
 //파이어베이스 키값 설정
 import firebaseConfig from '../../firebaseConfig';
+
+//스토어 연결
+import store from '../store/';
+
 //파이어베이스 install
 firebase.initializeApp(firebaseConfig);
+
+firebase.auth().onAuthStateChanged(fu => store.commit('setSignUser', fu));
 
 //Vue 전역사용 $firebase 설정
 Vue.prototype.$firebase = firebase;

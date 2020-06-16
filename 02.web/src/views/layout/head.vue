@@ -44,6 +44,8 @@
 				<v-icon>mdi-magnify</v-icon>
 				<!-- 돋보기 아이콘 -->
 			</v-btn>
+
+			<SiteSign />
 		</v-app-bar>
 
 		<!-- 좌메뉴 -->
@@ -63,8 +65,9 @@
 
 <script>
 import SideMenus from '@/views/layout/SideMenus';
+import SiteSign from '@/views/layout/SiteSign';
 export default {
-	components: { SideMenus },
+	components: { SideMenus, SiteSign },
 	props: ['title', 'items'],
 	data() {
 		return {
